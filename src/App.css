@@ -1,0 +1,88 @@
+/* global */
+
+.btn {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.todoList {
+  padding: 0;
+}
+
+.todoListItem {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+}
+
+.todoListItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.ItemBtnGroup {
+  display: flex;
+  align-items: center;
+}
+
+.btnEditItem {
+  margin-right: 20px;
+  padding: 16px;
+  background-image: url('/img/editImg.svg');
+  background-clip: cover;
+}
+
+.btnItem {
+  padding: 5px 9px;
+  background-color: red;
+  border-radius: 25%;
+  color: #fff;
+}
+
+.done {
+  background-color: rgba(172, 255, 47, 0.7);
+}
+
+.formCreate {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.btnCreate {
+  padding: 15px 20px;
+  background-color: #fff;
+  color: #2d90ed;
+  border: 1px solid #2d90ed;
+  border-radius: 10px;
+}
+
+.inputCreate {
+  padding: 5px 10px;
+  min-width: 400px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+  .inputCreate {
+    min-width: 300px;
+  }
+}
