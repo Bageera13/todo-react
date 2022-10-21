@@ -21,7 +21,7 @@ function TodoItem ({ todo, index, onChange, deleteTodo }) {
         <input type='checkbox' disabled={isDisabled} checked={todo.completed} onChange={() => onChange(todo.id)} />
         <strong> {index + 1} </strong>
         &nbsp;
-        <div>{!isDisabled ? input.value() : <input {...input.bind} type='text' onBlur={editHandler} />}</div>
+        {!isDisabled ? input.value() : <input {...input.bind} type='text' onBlur={editHandler} />}
       </div>
 
       <div className="ItemBtnGroup">

@@ -16,6 +16,10 @@ ul {
   max-width: 1170px;
 }
 
+.titleTodos {
+  color: #7850a0;
+}
+
 .todoList {
   padding: 0;
 }
@@ -27,7 +31,7 @@ ul {
   align-items: center;
   border: 1px solid gray;
   border-radius: 10px;
-  background-color: #e5e5e5;
+  background-color: #f0f0c8;
 }
 
 .todoListItem:not(:last-child) {
@@ -54,7 +58,7 @@ ul {
 }
 
 .done {
-  background-color: rgba(172, 255, 47, 0.7);
+  background-color: #a0f028;
 }
 
 .formCreate {
@@ -68,8 +72,8 @@ ul {
 .btnCreate {
   padding: 15px 20px;
   background-color: #fff;
-  color: #2d90ed;
-  border: 1px solid #2d90ed;
+  color: #7850a0;
+  border: 1px solid #7850a0;
   border-radius: 10px;
 }
 
@@ -85,4 +89,10 @@ ul {
   .inputCreate {
     min-width: 300px;
   }
+}
+
+.noTasks {
+  padding: 30px 0 0 5px;
+  font-size: 28px;
+  color: #f05050;
 }

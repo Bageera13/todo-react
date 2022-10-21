@@ -41,11 +41,11 @@ function App() {
 
   return (
       <div className="container">
-        <h1>Список дел:</h1>
+        <h1 className='titleTodos'>Список дел:</h1>
 
         <TodoCreateItem onCreate={addTodo} />
 
-        <TodoList todos={todos} onToggle={toggleTodo} deleteTodo={removeTodo} />
+        { todos.length === 0 ? <div className='noTasks'>Список пуст :(</div> :  <TodoList todos={todos} onToggle={toggleTodo} deleteTodo={removeTodo} />}
       </div>
   );
 }
